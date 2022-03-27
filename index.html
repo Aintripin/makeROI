@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <!--  -->
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js" defer></script>
+    </head>
+
+
+    <body>
+        <div class = "section1">
+            <section class="main container-form" id="blur">
+                <!-- SIDEBAR LEFT -->
+                <div class="sidebar-left">             <!-- set the bg as image -->
+                    <img class="logo" src="../images/logo.svg" />
+                </div>
+                <!-- SIDEBAR RIGHT -->
+                <div class="sidebar-right">
+                    <nav class="nav__links">
+                        <a class="reach-out" id = "reachOut" href="#" onClick = "toggle()">Форма</a>
+                    </nav>
+    
+                    <div class="title-wrapper">
+                        <h1 class="title__main">
+                            Kembang <br />
+                            Flower Mantap
+                        </h1>
+                        <p class="subtitle__main">
+                            Lorem Ipsum is simply dummy text of the printing <br />
+                            and typesetting industry. Lorem Ipsum has been the <br />
+                            industry's standard dummy text ever since the 1500s.
+                        </p>
+                    </div>
+    
+                    <!-- BUTTON WRAPPER -->
+                    <div class="button-wrapper">
+                    <button class="previous">
+                        <div class="previous-back">
+                            <img src="../images/arrow-back.svg" alt="" />
+                            <span>Previous</span>
+                        </div>
+                        <div class="previous-text">Kaktus Plant</div>
+                    </button>
+    
+                    <button class="next">
+                        <div class="next-forward">
+                            <img src="../images/arrow-forward.svg" alt="" />
+                            <span>Next</span>
+                        </div>
+                        <div class="next-text">Rahasia Plant</div>
+                    </button>
+                    </div>
+    
+                </div>
+            </section>
+    
+            <!-- SERVICES -->
+            <div class="services">
+                <!-- fast delivery -->
+                <div class = "services-item">
+                    <div class="img-services">
+                    <img src="../images/fast 1.svg" alt="" />
+                        <div class="text-img">
+                            Fast<br />
+                            Delivery
+                        </div>
+                    </div>
+                    <div class="text-services">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard
+                    </div>
+                </div>
+                <!-- great customer serivce -->
+                <div class = "services-item">
+                    <div class="img-services">
+                    <img src="../images/headphones 1.svg" alt="" />
+                        <div class="text-img">
+                            Great Customer <br />
+                            Service
+                        </div>
+                    </div>
+                    <div class="text-services">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard
+                    </div>
+                </div>
+                <!-- original plants -->
+                <div class = "services-item">
+                    <div class="img-services">
+                    <img src="../images/plant 1.svg" alt="" />
+                        <div class="text-img">
+                            Original <br />
+                            Plants
+                        </div>
+                    </div>
+                    <div class="text-services">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard
+                    </div>
+                </div>
+                <!-- affordable price -->
+                <div class = "services-item">
+                    <div class="img-services">
+                    <img src="../images/dollar-symbol 1.svg" alt="" />
+                        <div class="text-img">
+                            Affordable <br />
+                            Price
+                        </div>
+                    </div>
+                    <div class="text-services">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard
+                    </div>
+                </div>
+    
+            </div>
+    
+            <!-- FEATURED PLANTS -->
+            <div class="featured-plants">
+                <div class="text-featured-plants">Featured Plants</div>
+                <div class="select-featured-plants">Cheaper First</div>
+            </div>
+    
+            <div class="list-featured-plants">
+    
+                <!-- cactus 1 -->
+                <div class="cacti">
+                    <img src="../images/cactus.png" alt="" />
+                    <div class="text-price">Kaktus Plants</div>
+                    <div class="price">IDR 85.000</div>
+                </div>
+                <!-- cactus 2 -->
+                <div class="cacti">
+                    <img src="../images/landark.png" alt="" />
+                    <div class="text-price">Landak Plants</div>
+                    <div class="price">IDR 105.000</div>
+                </div>
+                <!-- cactus 3 -->
+                <div class="cacti">
+                    <img src="../images/kecubung_01.png" alt="" />
+                    <div class="text-price">Kecubung Plants</div>
+                    <div class="price">IDR 85.000</div>
+                </div>
+                <!-- cactus 4 -->
+                <div class="cacti">
+                    <img src="../images/kecubung_02.png" alt="" />
+                    <div class="text-price">Kecubung Plants</div>
+                    <div class="price">IDR 85.000</div>
+                </div>
+                <!-- cactus 5 -->
+                <div class="cacti">
+                    <img src="../images/kecubung_03.png" alt="" />
+                    <div class="text-price">Kecubung Plants</div>
+                    <div class="price">IDR 85.000</div>
+                </div>
+            </div>
+    
+            <div id="popup">
+                <img src="../images/map.svg" alt="image" id = "map">
+        
+                
+                <div class="container_02">
+                    <h2>Форма сайта</h2>
+                    <p class = "container_02_text">Lorem ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                    <div id="error" class = "err_hidden"></div>
+                    <form id = "form_pop_up" action = "/" method = "GET">
+                        <div class="form-wrapper">
+                            <input type="text" class = "userdata" id = "userName" name = "userName" placeholder = "Имя" required>
+                            <input type="text" class = "userdata" id = "userNumber" name = "userNumber" placeholder = "Номер телефона" required>
+                        </div>
+                        <div class="button-wrapper">
+                            <button href="#" onClick = "toggle()" id = "cancel" class = "a_popup">
+                                <span class = "span_popup">
+                                    Отменить
+                                </span>
+                            </button>
+                            <button href="#"                      id = "send" class = "a_popup" type = "submit">
+                                <span class = "span_popup">
+                                    Отправить
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                    
+                </div>
+                <div id="pop_up_close">
+                    <img src="../images/close_button.svg" alt="close" onClick = "toggle()">
+                </div>
+            </div>
+        </div>
+        
+        <section id = "spinner_id" class = "spinner_section spinner_hidden">
+
+            <svg viewBox="0 0 50 50" class="spinner">
+                <circle class="ring" cx="25" cy="25" r="22.5" />
+                <circle class="line" cx="25" cy="25" r="22.5" />
+            </svg>
+
+        </section>
+
+
+        <script type = "text/javascript">
+            function toggle(){
+                var blur = document.getElementById("blur");
+                blur.classList.toggle("active");
+                var popup = document.getElementById("popup");
+                popup.classList.toggle("active");
+            }
+        </script>
+
+    </body>
+</html>
+
